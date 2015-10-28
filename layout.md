@@ -7,5 +7,6 @@ figures/boxplots_electrode_subset_evaluation/boxplots_electrode_subset_evaluatio
 figures/BSI_rFBE_Boxplots/BSI_rFBE_Boxplots.png
 rFBE_frequency_and_electrode_evaluationSimilar__.html
 figures/scatterplot_sBSI_F3-F4_tBSI_C3-C4/scatterplot_sBSI_F3-F4_tBSI_C3-C4.png
+Classification_performance__.html
 figures/ROC_and_boxplots_AUC/ROC_and_boxplots_AUC.png
 Figure_4_summarizes_classification_performance__.html
