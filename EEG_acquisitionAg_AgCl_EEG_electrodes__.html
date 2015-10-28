@@ -2,7 +2,7 @@
  EEG electrodes were placed according to the international 10-20 
 electrode placement system. EEGs were recorded at a sampling rate of 256
  per second using Schwarzer EEG29US&nbsp; hardware and reviewed online with 
-Brainlab software (OSG). <br></div><div><br></div><h2 class="ltx_title_subsection">Calculation of the Brain Symmetry Index<br></h2><div>EEGs were processed with in-house developed Matlab software <cite class="squire-citation ltx_cite" data-bib-text="@incollection{2013,
+Brainlab software (OSG). <br></div><div><br></div><h2 class="ltx_title_subsection">Calculation of the Brain Symmetry Index<br></h2><div>EEGs were processed with in-house developed Matlab software <cite class="ltx_cite" data-bib-text="@incollection{2013,
 	doi = {10.1016/b978-0-12-405876-7.15002-3},
 	url = {http://dx.doi.org/10.1016/b978-0-12-405876-7.15002-3},
 	year = 2013,
@@ -10,10 +10,10 @@ Brainlab software (OSG). <br></div><div><br></div><h2 class="ltx_title_subsectio
 	pages = {525},
 	title = {{MATLAB}{\textregistered} and Simulink Toolboxes},
 	booktitle = {Matlab}
-}" data-bib-key="2013" style="cursor: pointer" contenteditable="false"><a class="au-cite-link" href="#2013">(2013)</a></cite>.
+}" data-bib-key="2013" contenteditable="false"><a href="#2013">(2013)</a></cite>.
  The recordings are band-pass filtered between 0.5 and 25 Hz and 
-subsequently divided in 10 second epochs on which subsequently analysis 
-is performed. The BSI is defined as the absolute value of the average 
+subsequently divided in 10 second epochs. Subsequently analysis 
+is performed on uni-polar EEG channels in the common average montage. The BSI is defined as the absolute value of the average 
 relative differences in spectral density of the left and right 
 hemispheres. Our implementation differs slightly from the those 
 published previously&nbsp;<cite class="ltx_cite" data-bib-text="@article{van_Putten_2004,
@@ -66,73 +66,8 @@ published previously&nbsp;<cite class="ltx_cite" data-bib-text="@article{van_Put
 	journal = {Annals of Biomedical Engineering}
 }" data-bib-key="Bogaarts_2014" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Bogaarts_2014">(Bogaarts 2014)</a></cite>. The spatial BSI (sBSI) is calculated according to equation 1:<br></div><div><br></div><div><span data-equation="BSI=\frac{1}{E\cdot F}\Sigma\Sigma\left|\frac{L-R}{L+R}\right|" class="ltx_Math" contenteditable="false">\(BSI=\frac{1}{E\cdot F}\Sigma\Sigma\left|\frac{L-R}{L+R}\right|\)</span> 		equation 1<br></div><div><br></div><div>where e indicates the electrode pair and f&nbsp; indicates the frequency bin.<br></div><div><div>First,
  the spectral density of eleven 2Hz bins ranging from 0 to 16 Hz (1 Hz 
-overlap) is calculated for each EEG channel. Second, the absolute left 
+overlap) was calculated for each EEG channel. Second, the absolute left 
 minus right difference for each electrode pair at each 2 Hz bin are 
 divided by their sum. Third, the average of these values over the 8 
-electrode pairs is calculated. Finally, the BSI is calculated as the 
-average value over the 11 frequency bins. In addition to changes in 
-spatial symmetry, diffuse change in contralateral EEG characteristics 
-may arise as well due to cross-filling or by a transient functional 
-disconnection from the ipsilateral hemisphere&nbsp;<cite class="ltx_cite" data-bib-text="@article{Tu_2015,
-  doi = {10.1097/wnp.0000000000000154},
-  url = {http://dx.doi.org/10.1097/wnp.0000000000000154},
-  year = {2015},
-  publisher = {Ovid Technologies (Wolters Kluwer Health)},
-  volume = {32},
-  number = {2},
-  pages = {152--158},
-  author = {Bin Tu and Nadege J. Assassi and Carl W. Bazil and Marla J. Hamberger and Lawrence J. Hirsch},
-  title = {{Quantitative {EEG} Is an Objective Sensitive, and Reliable Indicator of Transient Anesthetic Effects During Wada Tests}},
-  journal = {Journal of Clinical Neurophysiology},
-}
-" data-bib-key="Tu_2015" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Tu_2015">(Tu 2015)</a></cite>&nbsp;<cite class="ltx_cite" data-bib-text="@article{Hong_2000,
-  doi = {10.1111/j.1528-1157.2000.tb00141.x},
-  url = {http://dx.doi.org/10.1111/j.1528-1157.2000.tb00141.x},
-  year = {2000},
-  month = {feb},
-  publisher = {Wiley-Blackwell},
-  volume = {41},
-  number = {2},
-  pages = {207--212},
-  author = {Seung Bong Hong and Kyung-won Kim and Dae Won Seo and Sang Eun Kim and Dong Gyu Na and Hong Sik Byun},
-  title = {{Contralateral {EEG} Slowing and Amobarbital Distribution in Wada Test: An Intracarotid {SPECT} Study}},
-  journal = {Epilepsia},
-}
-" data-bib-key="Hong_2000" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Hong_2000">(Hong 2000)</a></cite><cite class="ltx_cite" data-bib-text="@article{Gotman_1992,
-  doi = {10.1212/wnl.42.11.2136},
-  url = {http://dx.doi.org/10.1212/wnl.42.11.2136},
-  year = {1992},
-  month = {nov},
-  publisher = {Ovid Technologies (Wolters Kluwer Health)},
-  volume = {42},
-  number = {11},
-  pages = {2136--2136},
-  author = {J. Gotman and M. S. Bouwer and M. Jones-Gotman},
-  title = {{Intracranial {EEG} study of brain structures affected by internal carotid injection of amobarbital}},
-  journal = {Neurology},
-}
-" data-bib-key="Gotman_1992" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Gotman_1992">(Gotman 1992)</a></cite><cite class="ltx_cite" data-bib-text="@article{Douw_2009,
-  doi = {10.1016/j.neuroimage.2009.02.034},
-  url = {http://dx.doi.org/10.1016/j.neuroimage.2009.02.034},
-  year = {2009},
-  month = {jul},
-  publisher = {Elsevier {BV}},
-  volume = {46},
-  number = {3},
-  pages = {584--588},
-  author = {Linda Douw and Johannes C. Baayen and Martin Klein and Dimitri Velis and Willem C. Alpherts and Joost Bot and Jan J. Heimans and Jaap C. Reijneveld and Cornelis J. Stam},
-  title = {{Functional connectivity in the brain before and during intra-arterial amobarbital injection (Wada test)}},
-  journal = {{NeuroImage}},
-}
-" data-bib-key="Douw_2009" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Douw_2009">(Douw 2009)</a></cite><cite class="ltx_cite" data-bib-text="@article{Ahern_1995,
-	doi = {10.1097/00004691-199505010-00006},
-	url = {http://dx.doi.org/10.1097/00004691-199505010-00006},
-	year = 1995,
-	publisher = {Ovid Technologies (Wolters Kluwer Health)},
-	volume = {12},
-	number = {3},
-	pages = {285--290},
-	author = {Geoffrey L. Ahern and David M. Labiner and Dinesh Talwar and Anne M. Herring and Martin E. Weinand},
-	title = {Quantitative Analysis of the Electroencephalogram in the Intracarotid Amobarbital Procedure},
-	journal = {Journal of Clinical Neurophysiology}
-}" data-bib-key="Ahern_1995" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Ahern_1995">(Ahern 1995)</a></cite>.<br></div><div><br></div></div><div><br></div>
+electrode pairs was calculated. Finally, the BSI was calculated as the 
+average value over the 11 frequency bins. <br></div><div><br></div></div>
