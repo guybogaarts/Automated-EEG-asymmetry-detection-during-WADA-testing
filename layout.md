@@ -1,2 +1,3 @@
 untitled.html
 figures/boxplots_electrode_subset_evaluation/boxplots_electrode_subset_evaluation.png
+figures/BSI_rFBE_Boxplots/BSI_rFBE_Boxplots.png
