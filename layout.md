@@ -9,4 +9,4 @@ rFBE_frequency_and_electrode_evaluationSimilar__1.html
 figures/scatterplot_sBSI_F3-F4_tBSI_C3-C4/scatterplot_sBSI_F3-F4_tBSI_C3-C4.png
 Classification_performanceFigure_4_summarizes_classification__.html
 figures/ROC_and_boxplots_AUC/ROC_and_boxplots_AUC.png
-Discussion__.html
+DiscussionQuantitative_EEG_analysis_provides_continuous__.html
