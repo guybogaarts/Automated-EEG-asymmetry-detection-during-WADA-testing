@@ -2,7 +2,7 @@
  EEG electrodes were placed according to the international 10-20 
 electrode placement system. EEGs were recorded at a sampling rate of 256
  per second using EEG amplifiers (Schwarzer, type EEG 29 US) and reviewed online with 
-Brainlab software (OSG). <br></div><div><br></div><h2 class="ltx_title_subsection">Calculation of the Brain Symmetry Index<br></h2><div>EEGs were processed with in-house developed Matlab software ﻿<cite class="ltx_cite" data-bib-text="@incollection{2013,
+Brainlab software (OSG). <br></div><div><br></div><h2 class="ltx_title_subsection">Calculation of the Brain Symmetry Index<br></h2><div>EEGs were processed with in-house developed Matlab software <cite class="ltx_cite" data-bib-text="@incollection{2013,
 	doi = {10.1016/b978-0-12-405876-7.15002-3},
 	url = {http://dx.doi.org/10.1016/b978-0-12-405876-7.15002-3},
 	year = 2013,
@@ -16,7 +16,7 @@ divided in 10 second epochs. Subsequently, analysis
 is performed on uni-polar EEG channels. BSI is defined as the absolute value of the average 
 relative differences in spectral density beween the left and right 
 hemispheres. Our implementation differs slightly from those 
-published previously&nbsp;﻿<cite class="ltx_cite" data-bib-text="@article{van_Putten_2004,
+published previously&nbsp;<cite class="ltx_cite" data-bib-text="@article{van_Putten_2004,
 	doi = {10.1161/01.str.0000144649.49861.1d},
 	url = {http://dx.doi.org/10.1161/01.str.0000144649.49861.1d},
 	year = 2004,
@@ -52,7 +52,7 @@ published previously&nbsp;﻿<cite class="ltx_cite" data-bib-text="@article{van_
 	author = {Michel J.A.M. van Putten and Jurriaan M. Peters and Sandra M. Mulder and Jan A.M. de Haas and Cornelis M.A. Bruijninckx and D{\'{e}}nes L.J. Tavy},
 	title = {A brain symmetry index ({BSI}) for online {EEG} monitoring in carotid endarterectomy},
 	journal = {Clinical Neurophysiology}
-}" data-bib-key="van_Putten_2004" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#van_Putten_2004">(Putten 2004)</a></cite>. This is because it was more convenient to use Matlab software previously written for EEG based seizure detection ﻿<cite class="ltx_cite" data-bib-text="@article{Bogaarts_2014,
+}" data-bib-key="van_Putten_2004" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#van_Putten_2004">(Putten 2004)</a></cite>. This is because it was more convenient to use Matlab software previously written for EEG based seizure detection <cite class="ltx_cite" data-bib-text="@article{Bogaarts_2014,
 	doi = {10.1007/s10439-014-1089-2},
 	url = {http://dx.doi.org/10.1007/s10439-014-1089-2},
 	year = 2014,
@@ -64,7 +64,7 @@ published previously&nbsp;﻿<cite class="ltx_cite" data-bib-text="@article{van_
 	author = {J. G. Bogaarts and E. D. Gommer and D. M. W. Hilkman and V. H. J. M. van Kranen-Mastenbroek and J. P. H. Reulen},
 	title = {{EEG} Feature Pre-processing for Neonatal Epileptic Seizure Detection},
 	journal = {Annals of Biomedical Engineering}
-}" data-bib-key="Bogaarts_2014" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Bogaarts_2014">(Bogaarts 2014)</a></cite>. The spatial BSI (sBSI) is calculated according to equation 1:<br></div><div><br></div><div><span class="ltx_Math" contenteditable="false" data-equation="BSI=\frac{1}{E\cdot F}\Sigma\Sigma\left|\frac{L-R}{L+R}\right|">\(BSI=\frac{1}{E\cdot F}\Sigma\Sigma\left|\frac{L-R}{L+R}\right|\)</span> 		equation 1<br></div><div><br></div><div>where E indicates the electrode pair and F&nbsp; indicates the frequency bin.&nbsp;<b><i>(moeten die E en F niet onder de sommatietekens?)</i></b><br></div><div><div>First,
+}" data-bib-key="Bogaarts_2014" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Bogaarts_2014">(Bogaarts 2014)</a></cite>. The spatial BSI (sBSI) is calculated according to equation 1:<br></div><div><br></div><div><span class="ltx_Math" contenteditable="false" data-equation="BSI=\frac{1}{E\cdot F}\Sigma\Sigma\left|\frac{L-R}{L+R}\right|">\(BSI=\frac{1}{E\cdot F}\Sigma\Sigma\left|\frac{L-R}{L+R}\right|\)</span> 		equation 1<br></div><div><br></div><div>where E indicates the electrode pair and F&nbsp; indicates the frequency bin.&nbsp;<b><i>(Formule is onduidelijk: waarover wordt gesommeerd? waarom deel je door E-F? waar staan L en R voor?)</i></b><br></div><div><div>First,
  the spectral density of eleven 2Hz bins ranging from 0 to 16 Hz (1 Hz 
 overlap) was calculated for each EEG channel. Second, the absolute left 
 minus right difference for each electrode pair at each 2 Hz bin are 
