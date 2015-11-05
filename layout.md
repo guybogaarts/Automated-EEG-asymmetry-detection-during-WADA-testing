@@ -2,7 +2,7 @@ untitled.html
 MethodsSubjects_and_Wada_tests58_adult__1.html
 EEG_acquisitionAg_AgCl_EEG_electrodes__.html
 figures/equation1/equation1.png
-where_e_indicates_the_electrode__.html
+where_e_and_f_indicate__.html
 Calculation_of_relative_QEEG_measuresA__.html
 ResultsBSI_electrode_subset_evaluationBSI_can__.html
 figures/boxplots_electrode_subset_evaluation/boxplots_electrode_subset_evaluation.png
