@@ -1,18 +1,10 @@
-<h2 class="ltx_title_subsection">rFBE frequency and electrode evaluation<br></h2><div>Figure 2B shows the AUC value distributions for rFBE for each 
-electrode pair, including the 3 midline electrodes. The best performance
- (median AUC = 0.96) is achieved by Cz and C3-C4 (p=0.42, Wilcoxon 
-signed rank test). Also P3-P4 shows good performance (median AUC = 0.95)
- but is slightly worse compared to Cz (p=0.047, Wilcoxon signed rank 
-test). Contrary to the BSI score which performs best using the frontal 
-electrodes, rFBE performs best for the central, posterior and temporal 
-regions. <br></div><div>LDA combination of BSI and rFBE <br></div><div>Based
+<h2 class="ltx_title_subsection">LDA combination of BSI and rFBE&nbsp; <br></h2><div>Based
  on the results shown in figure 2, BSI calculated using electrode pair 
-F3-F4 and rFBE based on electrode C3-C4 were combined using LDA into the 
-final cBSI score. Figure 3 shows a scatterplot of all rFBE-BSI points, 
-red points illustrates epochs labeled as ‘symmetric’ and green points 
+F3-F4, and rFBE based on electrode C3-C4 were combined using LDA into the 
+final cBSI score. Figure 5 shows a scatterplot of all rFBE-BSI points, 
+red points mark epochs labeled as ‘symmetric’ and green points 
 epochs labeled as ‘asymmetric’. The orientation of the green points 
-relative to the red points indicate that a (linear) combination of rFBE 
-and BSI better separates ‘symmetric’ from ‘asymmetric’ epochs. This is 
-confirmed by the LDA model which assigned proximal equal weights to rFBE and BSI. 
-In each LOO evaluation, a slightly different set of weight was found, (BSI: 0.74+-&nbsp; and rFBE 0.74 +- ). Because the weight were proximately the same, both were set to 1. This is equal to taking the average of BSI and rFBE. The blue line in figure 3 indicates the direction perpendicular to the 
+versus to the red points indicate that a (linear) combination of rFBE 
+and BSI better separate ‘symmetric’ from ‘asymmetric’ epochs compared to either rFBE or BSI alone. 
+In each LOO evaluation, a slightly different set of weights was found, (BSI: 0.74+-&nbsp; and rFBE 0.74 +- ). Because the weights for rFBE and BSI were proximately the same in each LOO evaluation, both weights were set to 1. Equation 2 can thus  be rewritten as:<br></div><div><br></div><div>cBSI=BSI+rFBE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	Equation 5<br></div><div> The blue line in figure 5 indicates the direction perpendicular to the 
 linear combination of rFBE and BSI.&nbsp;<br></div>
