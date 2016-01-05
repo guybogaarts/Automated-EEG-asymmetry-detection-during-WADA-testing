@@ -1,7 +1,7 @@
 untitled.html
 Various_quantitative_EEG_analysis_techniques__.html
 Regarding_their_relevance_our_study__.html
-MethodsSubjects_and_Wada_tests58_adult__1.html
+MethodsSubjects_and_Wada_testsWada_tests__.html
 EEG_acquisitionAg_AgCl_EEG_electrodes__.html
 figures/equation1/equation1.png
 where_e_and_f_indicate__.html
