@@ -37,25 +37,15 @@ energy (FBE) in the delta frequency range (0.7-2.3Hz) ﻿<cite class="ltx_cite" 
   journal = {Journal of Clinical Neurophysiology},
 }
 " data-bib-key="Tu_2015" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Tu_2015">(Tu 2015)</a></cite>.
- The 3 midline electrodes Fz, Cz and Fz are evaluated as well to obtain a
+ For the midline electrodes (Fz, Cz and Fz) rFBE was calculated as well to obtain a
  complete overview of all electrodes without excluding potential useful 
 information beforehand. To obtain one measure, independent of the injection side, the maximum of each left-right electrode pair is taken. 
 This yields, including the 3 midline electrodes, a total of 11 relative 
 FBE (rFBE).&nbsp; <br></div><div><br></div><div>The goal of using QEEG 
-measures as a monitoring tool is to agree with the visual evaluation of the 
-clinical neurophysiologist, i.e. classifying each EEG epoch as either 
-symmetric or asymmetric. Therefore, BSI and rFBE need to be combined 
-in a single ‘BSI’ score (cBSI). Linear discriminant analysis&nbsp; (LDA) 
-is a method of optimizing the separation of two classes by finding a linear combination of a set of features ﻿<cite class="ltx_cite" data-bib-text="@book{McLachlan_1992,
-	doi = {10.1002/0471725293},
-	url = {http://dx.doi.org/10.1002/0471725293},
-	year = 1992,
-	month = {mar},
-	publisher = {John Wiley {\&amp;} Sons,
-Inc.},
-	author = {Geoffrey J. McLachlan},
-	title = {Discriminant Analysis and Statistical Pattern Recognition}
-}" data-bib-key="McLachlan_1992" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#McLachlan_1992">(McLachlan 1992)</a></cite>. For example, LDA has been proven to be useful for asymmetry detection of post-clamp changes during carotid endarterectomy&nbsp;﻿<cite class="ltx_cite" data-bib-text="@article{Mishra_2011,
+measures as a monitoring tool is to assist the 
+clinical neurophysiologist with the visual evaluation of the EEG, i.e. classifying each EEG epoch as either 
+symmetric or asymmetric. To classify EEG as either symmetric or asymmetric using BSI and rFBE, both measures need to be combined 
+in a single ‘BSI’ score (cBSI). To accomplish this, Linear Discriminant Analysis (LDA) is used. LDA has been proven to be useful for asymmetry detection of post-clamp changes during carotid endarterectomy&nbsp;﻿<cite class="ltx_cite" data-bib-text="@article{Mishra_2011,
 	doi = {10.1007/s10877-011-9308-y},
 	url = {http://dx.doi.org/10.1007/s10877-011-9308-y},
 	year = 2011,
@@ -67,12 +57,21 @@ Inc.},
 	author = {Meenakshi Mishra and Muhammed Banday and Reza Derakhshani and John Croom and Paul J. Camarata},
 	title = {A Quantitative {EEG} Method for Detecting Post Clamp Changes During Carotid Endarterectomy},
 	journal = {Journal of Clinical Monitoring and Computing}
-}" data-bib-key="Mishra_2011" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Mishra_2011">(Mishra 2011)</a></cite>. Here, we use LDA to find a combination of sBSI and rFBE, that best separates symmetric from asymmetric EEG epochs:&nbsp; <br></div><div><br></div><div>cBSI=a*BSI+b*rFBE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	Equation 2<br></div><div><br></div><div>Parameters a and b in equation 2 are weight factors calculated by LDA.<br></div><div>To
+}" data-bib-key="Mishra_2011" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Mishra_2011">(Mishra 2011)</a></cite>. LDA is a method of optimizing the separation of two classes by finding a linear combination of a set of features ﻿﻿<cite class="ltx_cite" data-bib-text="@book{McLachlan_1992,
+	doi = {10.1002/0471725293},
+	url = {http://dx.doi.org/10.1002/0471725293},
+	year = 1992,
+	month = {mar},
+	publisher = {John Wiley {\&amp;} Sons,
+Inc.},
+	author = {Geoffrey J. McLachlan},
+	title = {Discriminant Analysis and Statistical Pattern Recognition}
+}" data-bib-key="McLachlan_1992" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#McLachlan_1992">(McLachlan 1992)</a></cite>.&nbsp; Here, we use LDA to find a linear combination of sBSI and rFBE best separating symmetric from asymmetric EEG epochs:&nbsp; <br></div><div><br></div><div>cBSI=a*BSI+b*rFBE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	Equation 2<br></div><div><br></div><div>Parameters a and b in equation 2 are weight factors optimized by LDA.<br></div><div><br></div><div>To
  avoid overfitting and subsequent over optimistic classification 
 results, the patient based leave-one-out (LOO) cross validation scheme 
 is used. With LOO, an LDA model is trained on all but one patient’s data 
-and used to classify this left out patient’s data. This is then repeated
- for all patients.&nbsp;&nbsp; <br></div><div>Finally a Kalman filter (KF) ﻿<cite class="ltx_cite" data-bib-text="@article{Kalman_1960,
+and is thereupon used to calculate cBSI for the left out patient’s data. This procedure is then repeated
+ for all patients. Finally a Kalman filter (KF) ﻿<cite class="ltx_cite" data-bib-text="@article{Kalman_1960,
 	doi = {10.1115/1.3662552},
 	url = {http://dx.doi.org/10.1115/1.3662552},
 	year = 1960,
@@ -83,10 +82,13 @@ and used to classify this left out patient’s data. This is then repeated
 	author = {R. E. Kalman},
 	title = {A New Approach to Linear Filtering and Prediction Problems},
 	journal = {Journal of Basic Engineering}
-}" data-bib-key="Kalman_1960" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Kalman_1960">(Kalman 1960)</a></cite>&nbsp;is used for signal smoothing. A KF is especially useful for online 
+}" data-bib-key="Kalman_1960" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Kalman_1960">(Kalman 1960)</a></cite>&nbsp;is used for  smoothing of the cBSI time series. In general, a KF is an algorithm that uses a series of noisy measurements (cBSI 
+scores) to produce estimates of an underlying system (actual hemispheric
+ inactivation) state being more precise then when based on single 
+cBSI measurements alone. A KF is especially useful for online 
 tasks such as asymmetry detection during a Wada test because it does not
- introduce a computational delay in contrary to a central moving average
- filter as used in ﻿<cite class="ltx_cite" data-bib-text="@article{Peters_2012,
+ introduce a computational delay in contrary to for example a central moving average
+ filter ﻿<cite class="ltx_cite" data-bib-text="@article{Peters_2012,
   doi = {10.1016/j.yebeh.2011.12.017},
   url = {http://dx.doi.org/10.1016/j.yebeh.2011.12.017},
   year = {2012},
@@ -100,7 +102,4 @@ tasks such as asymmetry detection during a Wada test because it does not
   journal = {Epilepsy {\&amp;} Behavior},
 }
 " data-bib-key="Peters_2012" contenteditable="false"><a href="https://www.authorea.com/users/73147/articles/86566/_show_article#Peters_2012">(Peters 2012)</a></cite>.
- A KF is an algorithm that uses a series of noisy measurements (BSI 
-scores) to produce estimates of an underlying system (actual hemispheric
- inactivation) state being more precise then when based on single 
-measurements alone. <br></div>
+<br></div>
