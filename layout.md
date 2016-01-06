@@ -14,7 +14,7 @@ rFBE_frequency_and_electrode_evaluationFigure__.html
 figures/BSI_rFBE_Boxplots/BSI_rFBE_Boxplots.png
 Time_course_of_rFBETo_investigate__.html
 figures/rBSE_averaged_response/rBSE_averaged_response.png
-Hier_moet_nog_text_komen__.html
+Time_course_of_BSI__.html
 figures/BSI_averaged_responses1/BSI_averaged_responses1.png
 LDA_combination_of_BSI_and__.html
 figures/scatterplot_sBSI_F3-F4_tBSI_C3-C4/scatterplot_sBSI_F3-F4_tBSI_C3-C4.png
