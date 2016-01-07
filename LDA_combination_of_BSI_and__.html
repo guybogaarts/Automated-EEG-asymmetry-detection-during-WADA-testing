@@ -1,10 +1,10 @@
 <h2 class="ltx_title_subsection">LDA combination of BSI and rFBE&nbsp; <br></h2><div>Based
  on the results shown in figure 2, BSI calculated using electrode pair 
-F3-F4, and rFBE based on electrode C3-C4 were combined using LDA into the 
+F3-F4, and rFBE based on electrode pair C3-C4 were combined using LDA into the 
 final cBSI score. Figure 5 shows a scatterplot of all rFBE-BSI points, 
 red points mark epochs labelled as ‘symmetric’ and green points 
 epochs labelled as ‘asymmetric’. The orientation of the green points 
 versus to the red points indicate that a (linear) combination of rFBE 
 and BSI better separate ‘symmetric’ from ‘asymmetric’ epochs compared to either rFBE or BSI alone. 
-In each LOO evaluation, a slightly different set of weights was found, (BSI: 0.74+-&nbsp; and rFBE 0.74 +- ). Because the weights for rFBE and BSI were proximately the same in each LOO evaluation, both weights were set to 0.5 which equates to taking the average of rFBE and BSI. Equation 2 can thus  be rewritten as:<br></div><div><br></div><div>cBSI=(BSI+rFBE)/2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	Equation 5<br></div><div><br></div><div>The blue line in figure 5 indicates the direction perpendicular to the 
+In each LOO evaluation an LDA model was trained on a different subset of patients, consequently  different sets of LDA weights were found (BSI: 0.67+-0.01&nbsp; and rFBE 0.74 +- 0.01). Because the weights for rFBE and BSI were of similar magnitude, and optimized for the LOO training dataset and not for the left out patient, we simplified the linear combination of BSI and rFBE by simply taking the average of both (normalized) measures. This equates to  setting both LDA weights to 0.5 and this simplification did not result in statistically significant different results (p = 0.5, Wilcoxon signed-rank test). <br></div><div><br></div><div>The blue line in figure 5 indicates the direction perpendicular to the 
 linear combination of rFBE and BSI. Depending on the desired sensitivity and specificity, a line perpendicular to the line in figure 5 can be used for classification. Furthermore, by varying this line, the ROC curve in Figure 6 is constructed. <br></div>
